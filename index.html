@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verstka travel</title>
+</head>
+
+<style>
+    .background-container {
+            position: relative;
+            width: 100%;
+            height: 100vh; 
+    }
+
+    .background-container img {
+        width: 1920px;
+        height: 985px;
+        gap: 0px;
+        opacity: 0px;
+        position:absolute;
+        z-index: -1;
+        object-fit: cover;
+    }
+
+    .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .logo img {
+            width: 137px; 
+            height: 72px;
+        }
+
+        .logo-text {
+            color: white;
+            font-size: 18px;
+            margin-top: 8px;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 12px;
+            justify: space-between;
+        }
+
+        .consultation-btn {
+        background-color: #1A3E3E;
+        width: 130px;
+        height: 38px;
+        padding: 12px 24px 12px 24px;
+        gap: 10px;
+        border-radius: 4px 0px 0px 0px;
+        opacity: 0px;
+        text-align: center;
+        }
+
+        .main-text-container {
+            width: 1080px;
+            height: 150px;
+            margin: 300px auto 0; 
+            opacity: 1;
+            display: flex;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .main-text {
+            font-family: 'NEXT ART', sans-serif;
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 75px;
+            letter-spacing: 0.02em;
+            text-align: left;
+            color: #FDFDFD;
+            padding-left: 20px;
+            z-index: 1;
+        }
+
+        @font-face {
+            font-family: 'NEXT ART';
+            src: url('fonts/NEXT ART_Bold.otf') format('truetype');
+            font-weight: 700; 
+            font-style: normal; 
+        }
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.search-frame {
+    display: flex;
+    gap: 24px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    padding: 20px;
+    width: 1180px;
+    height: 161px;
+}
+
+.search-field {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.search-field div {
+width: 270px;
+height: 52px;
+gap: 8px;
+opacity: 0px;
+text-align: left
+    color: #white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.search-button {
+    padding: 12px 24px;
+    background-color: #FDFDFD;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+    height: 52px;
+}
+
+@media (max-width: 1024px) {
+            .header-container {
+                padding: 15px 20px;
+            }
+
+            .logo img {
+                width: 100px;
+                height: auto;
+            }
+
+            .nav-menu {
+                gap: 10px;
+                font-size: 16px;
+            }
+
+            .main-text-container {
+                margin: 150px auto 0;
+                width: 90%;
+            }
+
+            .main-text {
+                font-size: 36px;
+                text-align: center;
+            }
+
+            .search-frame {
+                flex-direction: column; 
+                padding: 15px;
+                align-items: center;
+                width: 100%;
+                gap: 10px;
+            }
+
+            .search-field {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .search-button {
+                align-self: center;
+                width: 100%;
+            }
+        }
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .logo img {
+                width: 80px;
+            }
+
+            .nav-menu {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px;
+                font-size: 14px;
+            }
+
+            .main-text-container {
+                margin: 100px auto 0;
+                width: 100%;
+            }
+
+            .main-text {
+                font-size: 25px;
+                text-align: center;
+                margin: 10px;
+            }
+
+            .search-frame {
+                padding: 10px;
+                gap: 15px;
+                width: 95%;
+                max-width: 350px;
+                flex-direction: column;
+            }
+
+            .search-field {
+                width: 100%;
+                text-align: center;
+                font-size: 16px;
+            }
+
+            .search-field span {
+                text-align: left;
+                margin-top: 4px;
+                font-size: 15px;
+            }
+
+            .search-button {
+                width: 100%;
+                align-self: stretch;
+            }
+        }
+
+
+</style>
+<body>
+
+
+    <div class="background-container">
+        <img src="images/mountains-image.jpeg" alt="Горы-фоновое">
+
+        <header class="header-container">
+            <div class="logo">
+                <img src="images/Clip path group.png" alt="Логотип">
+                <div class="logo-text">РУМТИБЕТ</div>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#main">Главная</a>
+                <a href="#guide">Про гида</a>
+                <a href="#tour">Программа тура</a>
+                <a href="#price">Стоимость</a>
+                <a href="#blog">Блог</a>
+                <a href="#contacts">Контакты</a>
+                <a href="#consultation" class="consultation-btn">Консультация</a>
+            </nav>
+        </header>
+
+        <div class="main-text-container">
+            <div class="main-text">
+                Насладись прогулкой в горах <br> с командой единомышленников
+            </div>
+        </div>
+
+        <div class="search-container">
+            <div class="search-frame">
+                <div class="search-field">
+                    <div>Локация тура</div>
+                    <span>выберите из списка</span>
+                </div>
+                <div class="search-field">
+                    
+                    <div>Даты похода</div>
+                    <span>укажите даты похода</span>
+                </div>
+                <div class="search-field">
+                    <div>Участники</div>
+                    <span>минимум 4 человека</span>
+                </div>
+                <button class="search-button">Найти программу</button>
+            </div>
+        </div>
+        
+        
+        
+</body> 
+</html>
